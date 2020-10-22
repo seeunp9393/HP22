@@ -1,0 +1,470 @@
+@font-face {
+  font-family: "Arita-buri-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #c9b274;
+}
+
+/* reset */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #000;
+  font-family: "Arita-buri-SemiBold";
+  font-size: 12px;
+  color: #c9b274;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 4%;
+  width: 100%;
+  height: 4.25rem;
+  background: url(/img/border_homeSlider.png) no-repeat center bottom;
+}
+
+.nav {
+  display: flex;
+}
+
+.burger-icon {
+  display: block;
+  background: url(/img/header-menu.svg) 100% no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.search-icon {
+  display: block;
+  background: url(/img/headerSearch.svg) 100% no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.75rem;
+}
+
+.ct-header img {
+  width: 10.63rem;
+}
+
+.cart-icon {
+  display: block;
+  background: url(/img/headerBag.svg) 100% no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* main-top */
+
+main {
+  padding: 0 4%;
+}
+
+.top_video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video_con {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.history_wrap {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.history_box {
+  text-align: center;
+  align-items: center;
+}
+
+.history_btn {
+  border: 2px solid #544928;
+  padding: 0.5rem 2rem;
+}
+
+/* main_con */
+
+video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.main_con01 {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.con01_wrap {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.con01_box {
+  text-align: center;
+  align-items: center;
+}
+
+.con01_btn {
+  border: 2px solid #544928;
+  padding: 0.5rem 4rem;
+}
+
+.con02_wrap {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.con02_box {
+  text-align: center;
+  align-items: center;
+}
+
+.con02_btn {
+  border: 2px solid #544928;
+  padding: 0.5rem 3.125rem;
+}
+
+.main_con03 {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.con03_wrap {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.con03_box {
+  text-align: center;
+  align-items: center;
+}
+
+.con03_btn {
+  border: 2px solid #544928;
+  padding: 0.5rem 4rem;
+}
+
+.con04_wrap {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.con04_box {
+  text-align: center;
+  align-items: center;
+}
+
+.con04_btn {
+  border: 2px solid #544928;
+  padding: 0.5rem 3.125rem;
+}
+
+/* text */
+
+.info_text {
+  justify-content: center;
+  background: url(/img/border_catBox.png) no-repeat center top;
+  padding-top: 1.8rem;
+  padding-bottom: 1.6rem;
+
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.125rem;
+}
+
+/* info-more */
+
+.info_more {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  background: url(/img/border_catBox.png) no-repeat center top;
+  padding-top: 52px;
+}
+
+.more_wrap {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.more_box {
+  text-align: center;
+  align-items: center;
+}
+
+.more_btn {
+  border: 2px solid #544928;
+  padding: 0.5rem 4rem;
+}
+
+/* footer */
+
+footer {
+  padding: 12% 4% 4% 4%;
+}
+
+.shop_info {
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 3.125rem;
+  margin-bottom: 3rem;
+}
+
+.country {
+  display: inline-block;
+  border-bottom: 1px solid #c9b274;
+  line-height: 1rem;
+  cursor: pointer;
+}
+
+/* news */
+
+.news_box {
+  text-align: center;
+  font-size: 1.25rem;
+  background: url(/img/border_footer.png) no-repeat center bottom;
+  padding-bottom: 6.063rem;
+}
+
+.news_box > form > p {
+  font-size: 1rem;
+  padding-top: 42px;
+}
+
+.news_email {
+  padding-top: 16px;
+  outline: none;
+  border: none;
+  background-color: black;
+  border-bottom: 1px solid #c9b274;
+  color: #c9b274;
+  font-family: "Arita-buri-SemiBold";
+  font-size: 1rem;
+  width: 50%;
+  text-align: center;
+}
+
+.email_submit {
+  padding-top: 24px;
+}
+
+.submit_btn {
+  outline: none;
+  background-color: black;
+  color: #c9b274;
+  padding: 8px 24px;
+  border: 2px solid #544928;
+  font-size: 14px;
+  font-family: "Arita-buri-SemiBold";
+  cursor: pointer;
+}
+
+/* sns */
+
+.sns_box {
+  padding: 26px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.sns_btn {
+  padding: 26px 0;
+}
+
+.sns_btn > a {
+  padding: 12px;
+}
+
+.sns_insta {
+  display: inline-block;
+  background: url(/img/inst.png) no-repeat center;
+  width: 36px;
+  height: 38px;
+}
+
+.sns_twt {
+  display: inline-block;
+  background: url(/img/social-twitter-footer.png) no-repeat center;
+  width: 41px;
+  height: 34px;
+}
+
+.sns_fb {
+  display: inline-block;
+  background: url(/img/social-facebook-footer.png) no-repeat center;
+  width: 19px;
+  height: 38px;
+}
+
+.sns_yt {
+  display: inline-block;
+  background: url(/img/youtube.png) no-repeat center;
+  width: 55px;
+  height: 38px;
+}
+
+/* address */
+
+address {
+  text-align: center;
+  color: #ccc;
+}
