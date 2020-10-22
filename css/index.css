@@ -229,6 +229,17 @@ main {
 .history_btn {
   border: 2px solid #544928;
   padding: 0.5rem 2rem;
+  transition: all 0.3s linear 0s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.history_btn:hover {
+  font-size: 1.125rem;
+  background: #c9b274;
+  color: #000;
 }
 
 /* main_con */
@@ -259,6 +270,17 @@ video {
 .con01_btn {
   border: 2px solid #544928;
   padding: 0.5rem 4rem;
+  transition: all 0.3s linear 0s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.con01_btn:hover {
+  font-size: 1.125rem;
+  background: #c9b274;
+  color: #000;
 }
 
 .con02_wrap {
@@ -275,6 +297,17 @@ video {
 .con02_btn {
   border: 2px solid #544928;
   padding: 0.5rem 3.125rem;
+  transition: all 0.3s linear 0s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.con02_btn:hover {
+  font-size: 1.125rem;
+  background: #c9b274;
+  color: #000;
 }
 
 .main_con03 {
@@ -297,6 +330,17 @@ video {
 .con03_btn {
   border: 2px solid #544928;
   padding: 0.5rem 4rem;
+  transition: all 0.3s linear 0s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.con03_btn:hover {
+  font-size: 1.125rem;
+  background: #c9b274;
+  color: #000;
 }
 
 .con04_wrap {
@@ -313,6 +357,17 @@ video {
 .con04_btn {
   border: 2px solid #544928;
   padding: 0.5rem 3.125rem;
+  transition: all 0.3s linear 0s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.con04_btn:hover {
+  font-size: 1.125rem;
+  background: #c9b274;
+  color: #000;
 }
 
 /* text */
@@ -322,7 +377,6 @@ video {
   background: url(../img/border_catBox.png) no-repeat center top;
   padding-top: 1.8rem;
   padding-bottom: 1.6rem;
-
   margin-top: 4rem;
   text-align: center;
   font-size: 1rem;
@@ -354,6 +408,17 @@ video {
 .more_btn {
   border: 2px solid #544928;
   padding: 0.5rem 4rem;
+  transition: all 0.3s linear 0s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.more_btn:hover {
+  font-size: 1.125rem;
+  background: #c9b274;
+  color: #000;
 }
 
 /* footer */
