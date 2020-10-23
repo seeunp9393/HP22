@@ -149,19 +149,22 @@ html {
 body {
   background: #000;
   font-family: "Arita-buri-SemiBold";
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #c9b274;
 }
 
 /* header */
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 4%;
   width: 100%;
   height: 4.25rem;
-  background: url(../img/border_homeSlider.png) no-repeat center bottom;
+  z-index: 100;
+  background: #000 url(../img/border_homeSlider.png) no-repeat center bottom;
 }
 
 .nav {
@@ -227,7 +230,7 @@ main {
 }
 
 .history_btn {
-  border: 2px solid #544928;
+  border: 0.125rem solid #544928;
   padding: 0.5rem 2rem;
   transition: all 0.3s linear 0s;
   transition-property: all;
@@ -256,6 +259,10 @@ video {
   justify-content: center;
 }
 
+.main_con01 > a > img {
+  max-width: 100%;
+}
+
 .con01_wrap {
   display: flex;
   justify-content: center;
@@ -268,7 +275,7 @@ video {
 }
 
 .con01_btn {
-  border: 2px solid #544928;
+  border: 0.125rem solid #544928;
   padding: 0.5rem 4rem;
   transition: all 0.3s linear 0s;
   transition-property: all;
@@ -295,7 +302,7 @@ video {
 }
 
 .con02_btn {
-  border: 2px solid #544928;
+  border: 0.125rem solid #544928;
   padding: 0.5rem 3.125rem;
   transition: all 0.3s linear 0s;
   transition-property: all;
@@ -316,6 +323,10 @@ video {
   justify-content: center;
 }
 
+.main_con02 > a > img {
+  max-width: 100%;
+}
+
 .con03_wrap {
   display: flex;
   justify-content: center;
@@ -328,7 +339,7 @@ video {
 }
 
 .con03_btn {
-  border: 2px solid #544928;
+  border: 0.125rem solid #544928;
   padding: 0.5rem 4rem;
   transition: all 0.3s linear 0s;
   transition-property: all;
@@ -355,7 +366,7 @@ video {
 }
 
 .con04_btn {
-  border: 2px solid #544928;
+  border: 0.125rem solid #544928;
   padding: 0.5rem 3.125rem;
   transition: all 0.3s linear 0s;
   transition-property: all;
@@ -391,7 +402,11 @@ video {
   overflow: hidden;
   justify-content: center;
   background: url(../img/border_catBox.png) no-repeat center top;
-  padding-top: 52px;
+  padding-top: 3.25rem;
+}
+
+.info_more > a > img {
+  max-width: 100%;
 }
 
 .more_wrap {
@@ -406,7 +421,7 @@ video {
 }
 
 .more_btn {
-  border: 2px solid #544928;
+  border: 0.125rem solid #544928;
   padding: 0.5rem 4rem;
   transition: all 0.3s linear 0s;
   transition-property: all;
@@ -424,7 +439,7 @@ video {
 /* footer */
 
 footer {
-  padding: 12% 4% 4% 4%;
+  padding: 4%;
 }
 
 .shop_info {
@@ -436,7 +451,7 @@ footer {
 
 .country {
   display: inline-block;
-  border-bottom: 1px solid #c9b274;
+  border-bottom: 0.0625rem solid #c9b274;
   line-height: 1rem;
   cursor: pointer;
 }
@@ -452,15 +467,15 @@ footer {
 
 .news_box > form > p {
   font-size: 1rem;
-  padding-top: 42px;
+  padding-top: 2.625rem;
 }
 
 .news_email {
-  padding-top: 16px;
+  padding-top: 1rem;
   outline: none;
   border: none;
   background-color: black;
-  border-bottom: 1px solid #c9b274;
+  border-bottom: 0.0625rem solid #c9b274;
   color: #c9b274;
   font-family: "Arita-buri-SemiBold";
   font-size: 1rem;
@@ -469,62 +484,73 @@ footer {
 }
 
 .email_submit {
-  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 
 .submit_btn {
   outline: none;
   background-color: black;
   color: #c9b274;
-  padding: 8px 24px;
-  border: 2px solid #544928;
-  font-size: 14px;
+  padding: 0.5rem 1.5rem;
+  border: 0.125rem solid #544928;
+  font-size: 0.875rem;
   font-family: "Arita-buri-SemiBold";
   cursor: pointer;
+  transition: all 0.3s linear 0s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.submit_btn:hover {
+  font-size: 1.125rem;
+  background: #c9b274;
+  color: #000;
 }
 
 /* sns */
 
 .sns_box {
-  padding: 26px 0;
+  padding: 1.625rem 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .sns_btn {
-  padding: 26px 0;
+  padding: 1.625rem 0;
 }
 
 .sns_btn > a {
-  padding: 12px;
+  padding: 0.75rem;
 }
 
 .sns_insta {
   display: inline-block;
   background: url(../img/inst.png) no-repeat center;
-  width: 36px;
-  height: 38px;
+  width: 2.25rem;
+  height: 2.375rem;
 }
 
 .sns_twt {
   display: inline-block;
   background: url(../img/social-twitter-footer.png) no-repeat center;
-  width: 41px;
-  height: 34px;
+  width: 2.563rem;
+  height: 2.125rem;
 }
 
 .sns_fb {
   display: inline-block;
   background: url(../img/social-facebook-footer.png) no-repeat center;
-  width: 19px;
-  height: 38px;
+  width: 1.188rem;
+  height: 2.375rem;
 }
 
 .sns_yt {
   display: inline-block;
   background: url(../img/youtube.png) no-repeat center;
-  width: 55px;
-  height: 38px;
+  width: 3.438rem;
+  height: 2.375rem;
 }
 
 /* address */
@@ -532,4 +558,42 @@ footer {
 address {
   text-align: center;
   color: #ccc;
+}
+
+/* @media */
+
+@media (min-width: 1024px) {
+  main {
+    padding: 0% 8%;
+  }
+
+  .main_top {
+    display: flex;
+    padding-top: 3rem;
+  }
+
+  .top01 {
+    width: 50%;
+    padding-right: 1.5rem;
+  }
+
+  .top02 {
+    width: 50%;
+    padding-left: 1.5rem;
+  }
+
+  .main_bot {
+    display: flex;
+    padding-top: 3rem;
+  }
+
+  .bot01 {
+    width: 50%;
+    padding-right: 1.5rem;
+  }
+
+  .bot02 {
+    width: 50%;
+    padding-left: 1.5rem;
+  }
 }
