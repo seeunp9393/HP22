@@ -10,12 +10,11 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script>
   </head>
   <body>
     <header>
       <div class="lt-header">
-        <div class="nav">
+        <div class="nav_icon">
           <a href="#"><span class="burger-icon"></span></a>
           <a href="#"><span class="search-icon"></span></a>
         </div>
@@ -29,7 +28,29 @@
         <a href="#"><span class="cart-icon"></span></a>
       </div>
     </header>
-    <main>
+
+    <nav class="menu_wrap" style="display: none">
+      <div class="menu_top">
+        <ul>
+          <li><a href="#">신제품</a></li>
+          <li class="hide">ㅇㅇ</li>
+          <li><a href="#">최신동향</a></li>
+          <li><a href="#">주문조회</a></li>
+          <li><a href="#">애프터 서비스</a></li>
+        </ul>
+      </div>
+      <div class="menu_bottom">
+        <ul>
+          <li><a href="#">자주묻는질문</a></li>
+          <li><a href="#">COOKIE정책</a></li>
+          <li><a href="#">법적고지</a></li>
+          <li class="menu_num">
+            <a href="#">도움이 필요하세요?<br />0142607581</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="wrap">
       <div class="top_video">
         <iframe
           class="video_con"
@@ -141,5 +162,13 @@
         Register under number 582 031 373 Telephone 01 42 60 75 81.
       </address>
     </footer>
+    <script>
+      $(".burger-icon").click(function () {
+        $(".menu_wrap").show();
+      });
+      $(".wrap").click(function () {
+        $(".menu_wrap").hide();
+      });
+    </script>
   </body>
 </html>
