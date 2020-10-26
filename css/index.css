@@ -176,6 +176,7 @@ header {
   position: fixed;
   width: 50%;
   height: 100%;
+  padding-left: 3%;
   background-color: #000;
 }
 
@@ -187,6 +188,10 @@ header {
   padding: 18px;
 }
 
+.menu_top li:hover {
+  background-color: #222222;
+}
+
 .menu_bottom {
   font-size: 14px;
   padding-left: 12px;
@@ -195,6 +200,10 @@ header {
 
 .menu_bottom li {
   padding: 10px;
+}
+
+.menu_bottom li:hover {
+  background-color: #222222;
 }
 
 .menu_num {
