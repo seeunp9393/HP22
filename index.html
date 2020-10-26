@@ -160,11 +160,11 @@
       </address>
     </footer>
     <script>
-      $(".burger-icon").click(function () {
-        $(".menu_wrap").show();
+      $(".burger-icon").click(function (event) {
+        $(".menu_wrap").fadeIn(700);
       });
-      $(".wrap").click(function () {
-        $(".menu_wrap").hide();
+      $(".wrap").click(function (event) {
+        $(".menu_wrap").fadeOut(500);
       });
     </script>
   </body>
