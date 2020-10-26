@@ -317,12 +317,6 @@ video {
   color: #000;
 }
 
-.main_con03 {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-}
-
 .main_con02 > a > img {
   max-width: 100%;
 }
