@@ -482,6 +482,8 @@ footer {
 }
 
 .submit_btn {
+  appearance: none;
+  border-radius: none;
   outline: none;
   background-color: black;
   color: #c9b274;
