@@ -5,8 +5,8 @@ const burgerMenuC = $(".wrap").click(function (event) {
   $(".menu_wrap").fadeOut(500);
 });
 
-const search = $(".search-icon").click(function (event) {
-  alert("미구현");
+$("search-icon").click(function (event) {
+  alert("미구현 되었습니다");
 });
 
 const cart = $(".cart-icon").click(function (event) {
